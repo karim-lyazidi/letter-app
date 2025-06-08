@@ -5,16 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Send a Letter</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
 </head>
 <body class="bg-yellow-50 text-gray-800 flex flex-col items-center justify-center min-h-screen p-4">
   <h1 class="text-3xl font-bold mb-4">📜 Write Your Letter</h1>
   <textarea id="letter" class="w-full max-w-md h-40 p-2 border rounded mb-4" placeholder="Write your letter here..."></textarea>
-  <button onclick="submitLetter()" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+  <button id="submitBtn" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
     Send Letter
   </button>
   <div id="link" class="mt-4 text-center"></div>
 
-  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>
